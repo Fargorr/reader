@@ -1,0 +1,20 @@
+[app]
+title = ZXC
+package.name = demoscaner
+package.domain = org.heattheatr
+source.dir = /Users/nikita/bestProject
+source.include_exts = py,png,kv
+version = 1.0
+requirements = kivy, pytesseract, opencv, os, PIL
+icon.filename = %(source.dir)s/icon.png
+orientation = portrait
+fullscreen = 1
+android.permissions = READ_EXTERNAL_STORAGE, WRITE_TEXT_INPUT_STATE
+android.api = 18
+android.minapi = 8
+android.sdk = 21
+android.ndk = 26.2.11394342
+android.private_storage = True
+android.ndk_path = /Users/nikita/bestProject/android-ndk-r26c-darwin.dmg
+android.sdk_path = /Users/nikita/Library/Android/sdk
+android.p4a_dir = /Users/nikita/bestProject

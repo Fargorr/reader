@@ -1,0 +1,87 @@
+
+<GeneralWindow>
+    
+    grid : grid
+    box : box
+
+
+    name: "general"   
+    GridLayout:
+        
+        padding: 50
+        cols: 1
+        size: root.width, root.height
+        BoxLayout:
+            orientation: 'vertical'
+            id: grid
+            
+            
+            
+
+        BoxLayout:
+            size_hint: (1, 0.15)
+            id: box
+            orientational: 'horizontal'
+            spacing: 20
+            
+            
+            
+            RoundedButton:
+                text: 'галерея'
+                size_hint: (0.2, 0.9)
+                color: (1, 1, 0, 1)
+                bold: True
+                outline_width: 3
+                on_press:
+                    root.openGallery()
+                
+
+
+            RoundedButton:
+                text: 'GO!'
+                size_hint: (0.6, 0.9)
+                on_press:
+                    root.read_text_from_image()
+                #on_press:
+                color: (1, 1, 0, 1)
+                bold: True
+                outline_width: 3
+                
+
+
+            RoundedButton:
+
+                text: 'камера'
+                on_press:
+                    root.onCamera()
+                color: (1, 1, 0, 1)
+                
+                size_hint: (0.2, 0.9)
+                bold: True
+                outline_width: 3
+
+
+<RoundedButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    canvas.before:
+        Color: 
+            rgba: (0, 144, 255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [70]
+
+
+
+
+            
+            
+                
+        
+
+
+
+
+
+    
